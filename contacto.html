@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Blog del Aceite</title>
+    <!-- Enlace a la hoja de estilos.css -->
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado de la pagina -->
+    <header>
+        <h1>Contacto</h1>
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="variedades.html">Variedades</a></li>
+                <li><a href="proceso-elaboracion.html">Proceso de Elaboración</a></li>
+                <li><a href="categoria.html">Categorías</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección para el formulario -->
+    <section class="contacto">
+        <div class="formulario">
+            <!-- Formulario de contacto -->
+            <form action="enviar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="tema">Tema:</label>
+                <input type="text" id="tema" name="tema" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <!-- Sección para las redes sociales con los logos de las paginas -->
+        <div class="redes-sociales">
+            <h3>Síguenos en nuestras redes sociales</h3>
+            <img src="img/facebook.jpeg" alt="Facebook">
+            <img src="img/twitter.jpg" alt="Twitter">
+            <img src="img/instagram.jpg" alt="Instagram">
+        </div>
+    </section>
+    <!-- Pie de pagina -->
+    <footer>
+        <p>Contacto: caminantepaciente@protonmail.com</p>
+    </footer>
+</body>
+
+</html>

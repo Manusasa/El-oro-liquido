@@ -1,0 +1,286 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente principal */
+    margin: 0; /* Margen cero */
+    padding: 0; /* Sin relleno */
+    background-color: #f9f9f9; /* Color de fondo */
+    color: #333; /* Color de texto */
+    display: flex; /* Uso de Flexbox para el diseño */
+    flex-direction: column; /* Direccion de los elementos en columna */
+    min-height: 100vh; /* Altura minima de la ventana */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #8c9b5a; /* Color acorde al aceite de oliva */
+    color: white; /* Color de texto */
+    padding: 20px; /* Relleno interno */
+    text-align: center; /* Texto centrado */
+    flex: 0 1 auto; /* Tamañn automatico */
+}
+
+header h1 {
+    margin: 0; /* Sin margen predeterminado */
+}
+
+/* Estilos de navegación */
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Sin relleno */
+    display: flex; /* Uso de Flexbox para el diseño */
+    justify-content: center; /* Elementos centrados horizontalmente*/
+    background-color: #6b7a3a; /* Color de fondo */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista de navegación */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: white; /* Color de texto */
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px 20px; /* Relleno interno */
+    background-color: #8c9b5a; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Tansicion del color de fondo */
+}
+
+nav ul li a:hover {
+    background-color: #a1b56c; /* Color de fondo cuando se pasa el ratón */
+}
+
+/* Estilos de la sección y artículos */
+section {
+    padding: 20px; /* Relleno interno */
+    flex: 1 1 auto; /* Flexbox aumenta o disminuye el tamaño del item. Tamaño base automatico */
+    margin-bottom: 30px; /* Margen inferior */
+}
+
+article {
+    margin-bottom: 20px; /* Margen inferior */
+    padding: 20px; /* Relleno interno */
+    background-color: white; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    display: flex; /* Diseño con Flexbox */
+    flex-direction: column; /* Direccion de los elementos en colomna */
+}
+
+article h2 {
+    color: #6b7a3a; /* Color de texto */
+}
+
+article p {
+    text-align: left; /* Alineación del texto a la izquierda */
+    margin: 0; /* Elimina el margen */
+    flex: 1 1 auto; /* Flexbox aumenta o disminuye el tamaño del item. Tamaño base automatico */
+}
+
+article img {
+    float: right; /* La imagen flota a la derecha */
+    margin-left: 20px; /* Margen izquierdo */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 200px; /* Ancho maximo */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #8c9b5a; /* Color de fondo */
+    color: white; /* Color de texto */
+    text-align: center; /* Texto centrado */
+    padding: 10px; /* Relleno interno */
+    position: fixed; /* Pie de pagina en la parte inferior fijo */
+    width: 100%; /* Ancho completo */
+    bottom: 0; /* Posión en la parte inferior */
+    flex: 0 1 auto; /* Flexbox aumenta o disminuye el tamaño del item. Tamaño base automatico */
+}
+
+/* Estilos de la sección de introducción */
+.imagenFondo {
+    background-image: url('../img/imagenIndex1.jpg'); /* Ruta de la imagnen */
+    background-size: cover; /* Imagen cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    padding: 60px 20px; /* Relleno interno */
+    color: #fff; /* Color de texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    border-radius: 5px; /*Bordes redondeados */
+}
+
+.textoIndex {
+    background-color: rgba(0, 0, 0, 0.5); /*Fondo semitransparente */
+    padding: 60px 60px; /* Relleno interno */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+.imagenFondo h2 {
+    font-size: 2.5rem; /* Tamaño de la fuente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.imagenFondo p {
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos del contenido principal */
+section {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+p.variedades {
+    display: flex; /* Usa Flexbos para el diseño */
+    flex-direction: row; /* Dirección de los elementos en fila */
+    align-items: center; /* Elementos alineados al centro */
+    max-width: 75%; /* Ancho maximo */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+article.variedad-img {
+    max-width: 20%; /* Ancho maximo */
+    height: auto; /* Altura automatica */
+    margin-left: 20px; /* Margen izquierdo */
+    margin-right: 20px; /* Margen derecho */
+    margin-bottom: 40px; /* Margen inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.leer-mas {
+    display: inline-block; /* Ancho maximo */
+    padding: 15px 250px; /* Relleno interno */
+    font-size: 20px; /* Tamaño de letra */
+    font-weight: bold; /* Texto en negrita */
+    color: darkolivegreen; /* Color de texto */ 
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /*Sin subrayado */
+    box-shadow: #b4adad; /* Sombra */
+}
+
+.leer-mas:hover {
+    background-color: #a1b56c; /* Color de fondo al pasar el raton */
+    transform: translateY(-2px); /* Efecto de desplazamiento */
+}
+
+.leer-mas:active{
+    background-color: #072508; /* Color de fondo al hacer clic */
+    transform: translateY(0); /* Efecto de clic */
+}
+
+p.proceso {
+    flex: 3; /* Flexbox: crecer */
+    max-width: 75%; /* Ancho maximo */
+    margin-right: 20px; /* Margen derecho */
+    display: flex; /* Flexbox para el diseño */
+    align-items: flex-start; /* Alinea elementos al inicio */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+img.proceso-img {
+    flex: 1; /* Flexbox: crecer */
+    max-width: 25%; /* Ancho maximo */
+    height: auto; /* Altura automatica */
+}
+
+.contacto {
+    display: flex; /* Flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 20px; /* Relleno interno */
+    margin-left: 40px; /* Margen izquierdo */
+}
+
+.formulario {
+    flex: 1.5; /* Flexbox: crecer */
+    display: flex; /* Para el diseño */
+    flex-direction: column; /* Elementos en columna */
+    background: #f9f9f9; /* Fondo claro para el formulario */
+    padding: 20px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+.formulario label {
+    margin-top: 10px; /* Margen superio */
+    font-weight: bold; /* Texto en negrita para los labels */
+    color: #333; /* Color del texto */
+}
+
+.formulario input,
+.formulario textarea {
+    margin-top: 10px; /* Margen superior */
+    padding: 15px; /* Relleno interno*/
+    width: 100%; /* Ancho completo */ 
+    box-sizing: border-box; /* El relleno y el borde en el ancho total*/
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #4CAF50; /* Cambia el color del borde al enfocar */
+    outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+.formulario button {
+    margin-top: 20px; /* Margen superior */
+    padding: 15px; /* Relleno interno */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color de texto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente más grande */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+.formulario button:hover {
+    background-color: #45a049; /* Color de fondo al pasar el ratón */
+}
+
+.formulario button:active {
+    background-color: #3e8e41; /* Color más oscuro al hacer clic */
+    transform: scale(0.98); /* Efecto de clic */
+}
+
+.redes-sociales {
+    flex: 1; /* Flexbox: crecer */
+    padding: 20px; /* Relleno interno */
+    text-align: center; /* Centra el texto */
+}
+
+.redes-sociales img {
+    display: block; /* Muestra la imagen como un bloque */
+    margin: 10px auto; /* Margen superior e inferior, centrado horizonatal*/
+    width: 50px; /*Ancho de la imagen */
+    height: 50px; /* Altura de la imagen */
+}
+
+p.texto-categoria {
+    text-align: left; /* Texto a la izquierda */
+        margin: 0; /* Sin margen */
+        flex: 1 1 auto; /* Flexbox aumenta o disminuye el tamaño del item. Tamaño base automatico */
+        max-width: 750px; /* Ancho maximo */
+}
+
+img.categoria-img {
+    float: right; /* Flota la imagen a la derecha */
+    margin: 0 0 10px 10px; /* Margen inferior y margen izquierdo */
+    max-width: 200px; /* Ancho maximo */
+    height: auto; /* Altura maxima */
+}
+
+.content {
+    display: flex; /* Flexbox para el diseño */
+    align-items: center; /* Elementos al centro verticalmente */
+}
+
+.content p {
+    flex: 1; /* Flexbox: crecer */
+}
+
+.proceso-video {
+    max-width: 600px; /* Ancho maximo */
+    height: auto; /* Altura automatica */
+    margin-left: 20px; /* Margen izquierdo */
+    border-radius: 10px; /* Bordes redondeados */
+}
